@@ -12,12 +12,17 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate metrics
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
 
           # Output file
           filename: github-metrics.svg
+          output_action: none
 
           # Base content
           base: header, activity, community, repositories, metadata
@@ -40,3 +45,13 @@ jobs:
 
           # Config
           config_timezone: Asia/Kolkata
+
+      - name: Commit and push
+        env:
+          GIT_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "$GIT_EMAIL"
+          git add github-metrics.svg
+          git diff --staged --quiet || git commit -m "Update github-metrics.svg - [Skip GitHub Action]"
+          git push
