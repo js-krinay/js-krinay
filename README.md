@@ -54,6 +54,6 @@ Lead Software Engineer with 7+ years building scalable backend systems, real-tim
 <img src="https://github-readme-stats.vercel.app/api?username=js-krinay&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" height="165"/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=js-krinay&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="165"/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=js-krinay&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+<img src="https://github-readme-streak-stats-eight.vercel.app/?user=js-krinay&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=js-krinay&theme=tokyonight&no-frame=true&row=1&column=6" alt="Trophies"/>
+<img src="https://github-trophies.vercel.app/?username=js-krinay&theme=tokyonight&no-frame=true&row=1&column=6" alt="Trophies"/>
