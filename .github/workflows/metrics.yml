@@ -46,6 +46,10 @@ jobs:
           # Config
           config_timezone: Asia/Kolkata
 
+      - name: Copy rendered file
+        run: |
+          sudo cp /metrics_renders/github-metrics.svg ./github-metrics.svg
+
       - name: Commit and push
         env:
           GIT_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
